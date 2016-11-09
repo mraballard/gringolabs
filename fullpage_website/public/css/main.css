@@ -1,0 +1,167 @@
+/* Style for our header texts
+* --------------------------------------- */
+.yellow {
+  background-color: yellow;
+}
+body {
+  font-family: 'Shadows Into Light', cursive;
+}
+p {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+li {
+  font-size: 1.2em;
+}
+.titleSlideBlack {
+  color: white;
+}
+
+#storeFront {
+  border: 1px solid #485EBD;
+  border-radius: 10px;
+  margin-top: 1.5px;
+}
+
+h1{
+  font-size: 6em;
+  letter-spacing: 5px;
+}
+
+h2{
+  font-size: 3.5em;
+
+}
+#nameBox {
+  transform: skewY(10deg);
+  font-weight: bolder;
+  /*color: #21961F;*/
+  /*text-shadow: 5px 5px 0 #412659;*/
+  background: -webkit-linear-gradient(#412659, #21961F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*opacity: 0.8;*/
+}
+#about {
+  font-weight: bolder;
+  /*color: #21961F;*/
+  /*text-shadow: 5px 5px 0 #412659;*/
+  background: -webkit-linear-gradient(#E8BF32, #E87B3B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*opacity: 0.8;*/
+}
+h3 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+.card {
+  background-color: white;
+  /*width: 50%;
+  padding: 10%;
+  margin: 0 auto;*/
+  color: black;
+}
+.cardBlack {
+  background-color: black;
+  /*width: 50%;
+  padding: 10%;
+  margin: 0 auto;*/
+  color: white;
+}
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3{
+  background-size: cover;
+}
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section0 {
+  background-image: url(images/steps_wide.jpg);
+  padding: 10% 0 0 0;
+}
+#section2 {
+  background-image: url(images/sunset.jpg);
+  padding: 6% 10% 0 10%;
+  text-align: justify;
+}
+#section3 {
+  background-image: url(images/flag.jpg);
+  /*padding: 6% 0 0 0;*/
+}
+#section3 h1{
+  color: #000;
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+  background-color: #BD4A40;
+  padding: 6% 0 0 0;
+}
+#slide2{
+  background-color: #485EBD;
+  padding: 6% 0 0 0;
+}
+#slide3{
+  background-color: #24A622;
+  padding: 6% 0 0 0;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}
+
+#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 5px;
+	}
+
+	#header{
+		top:0px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+	}
+	#footer{
+		bottom:0px;
+    font-size: 1em;
+	}
+  #linkedIn {
+    width: 2em;
+    height: 2em;
+  }
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu {
+		bottom: 80px;
+	}
+	#infoMenu li a {
+		color: #fff;
+		z-index: 999;
+	}

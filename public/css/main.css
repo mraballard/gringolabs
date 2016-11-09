@@ -1,0 +1,21 @@
+body {
+  /*background-color: black;*/
+}
+
+#toplayer {
+  display: flex;
+}
+
+.layer {
+    position: relative;
+    z-index: 4;
+    margin-left: 10%;
+    top: 43%;
+}
+.myimage {
+  background: black;
+
+}
+#section0 {
+  background-color: black;
+}
