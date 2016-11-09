@@ -34,11 +34,12 @@ h2{
 
 }
 #nameBox {
+  z-index: 1;
   transform: skewY(10deg);
   font-weight: bolder;
   /*color: #21961F;*/
   /*text-shadow: 5px 5px 0 #412659;*/
-  background: -webkit-linear-gradient(#412659, #21961F);
+  background: -webkit-linear-gradient(#21961F, #000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /*opacity: 0.8;*/
@@ -88,8 +89,11 @@ h3 {
 
 /* Defining each sectino background and styles
 * --------------------------------------- */
+
 #section0 {
   background-image: url(images/steps_wide.jpg);
+  background-color: rgba(255, 0, 0, 0.2);
+  background-blend-mode: color-burn;
   padding: 10% 0 0 0;
 }
 #section2 {
