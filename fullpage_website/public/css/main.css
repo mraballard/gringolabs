@@ -1,5 +1,6 @@
 /* Style for our header texts
 * --------------------------------------- */
+
 @media (max-width: 768px) {
   .title {
     font-size: 10px;
@@ -8,7 +9,7 @@
     font-size: 1.1em;
     text-align: left;
     text-shadow: 0px 0px 1px black;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: white;
 	}
 	#section0 {
@@ -18,8 +19,32 @@
 	background-position: 85% 50%;
 	}
 	#about-title {
-	  font-size: 18px;
-  	margin-top: 10px;
+	  font-size: 3em;
+  	margin-top: 15px;
+  	text-align: center;
+  	text-shadow: 1px 1px 2px #FF3930;
+	}
+  .card {
+    width: 75%;
+  }
+  .card-white {
+    width: 75%;
+  }
+  .cardBlack {
+    width: 75%;
+  }
+}
+@media (max-width: 350px) {
+  #about-description {
+    font-size: 0.9em;
+    text-align: left;
+    text-shadow: 0px 0px 1px black;
+    letter-spacing: 2px;
+    color: white;
+  }
+  #about-title {
+    margin-top: 100px;
+	  font-size: 2em;
   	text-align: center;
   	text-shadow: 1px 1px 2px #FF3930;
 	}
@@ -45,22 +70,23 @@ li {
   letter-spacing: 1px;
 }
 .vertical-center {
-  min-height: 50vh;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .margin-top {
   margin-top: 20px;
 }
+.margin-bottom {
+  margin-bottom: 20px;
+}
 #c2go {
   width: 70%;
   height: 70%;
 }
-#storeFront {
-  width: 50%;
-  height: 50%;
-}
+
 #c2g-title {
   color: #784127;
   text-shadow: 0px 0px 20px black;
@@ -133,7 +159,7 @@ h4 {
   /*opacity: 0.8;*/
 }
 #about-title {
-  font-size: 5em;
+  /*font-size: 5em;*/
   font-weight: bolder;
   /*color: #21961F;*/
   /*text-shadow: 5px 5px 0 #412659;*/
@@ -145,25 +171,25 @@ h4 {
 #about-description{
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: 100;
-    color: #3A453F;
+    /*color: #3A453F;*/
     text-shadow: 1px 2px 3px #4599E8, -2px -2px 8px #E87B3B;
 }
 .card-white {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: white;
+  padding: 20px;
 }
 .card {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #BDBDBD;
-  /*width: 50%;
-  padding: 10%;
-  margin: 0 auto;*/
+  padding: 20px;
   color: black;
 }
 .cardBlack {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: black;
   color: white;
+  padding: 20px;
 }
 /* Centered texts in each section
 * --------------------------------------- */
@@ -211,19 +237,15 @@ h4 {
 * --------------------------------------- */
 #slide1{
   background-color: #25FAC1;
-  padding: 6% 0 0 0;
 }
 #slide2{
   background-color: #BD4A40;
-  padding: 6% 0 0 0;
 }
 #slide3{
   background-color: #485EBD;
-  padding: 6% 0 0 0;
 }
 #slide4{
   background-color: #24A622;
-  padding: 6% 0 0 0;
 }
 
 
