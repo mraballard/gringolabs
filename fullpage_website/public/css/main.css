@@ -1,5 +1,30 @@
 /* Style for our header texts
 * --------------------------------------- */
+@media (max-width: 768px) {
+  .title {
+    font-size: 10px;
+  }
+  #about-description {
+    font-size: 1.1em;
+    text-align: left;
+    text-shadow: 0px 0px 1px black;
+    letter-spacing: 1px;
+    color: white;
+	}
+	#section0 {
+	background-position: 45% 20%;
+	}
+  #section3 {
+	background-position: 85% 50%;
+	}
+	#about-title {
+	  font-size: 18px;
+  	margin-top: 10px;
+  	text-align: center;
+  	text-shadow: 1px 1px 2px #FF3930;
+	}
+}
+
 .yellow {
   background-color: yellow;
 }
@@ -14,8 +39,10 @@ p {
 li {
   font-size: 1.2em;
 }
+
 .titleSlideBlack {
   color: white;
+  letter-spacing: 1px;
 }
 .vertical-center {
   min-height: 50vh;
@@ -26,11 +53,49 @@ li {
 .margin-top {
   margin-top: 20px;
 }
+#c2go {
+  width: 70%;
+  height: 70%;
+}
 #storeFront {
-  /*border: 1px solid #485EBD;*/
-  /*border-radius: 10px;*/
   width: 50%;
   height: 50%;
+}
+#c2g-title {
+  color: #784127;
+  text-shadow: 0px 0px 20px black;
+}
+.c2g-text {
+  color: #784127;
+  text-shadow: 0px 0px 10px black;
+  letter-spacing: 1px;
+}
+#nitpic-title {
+  color: #25FAC1;
+  text-shadow: 0px 0px 40px black;
+}
+.nitpic-text {
+  color: #25FAC1;
+  text-shadow: 0px 0px 20px black;
+  letter-spacing: 1px;
+}
+#store-title {
+  color: #BD4A40;
+  text-shadow: 0px 0px 40px white;
+}
+.store-text {
+  color: #BD4A40;
+  text-shadow: 0px 0px 20px white;
+}
+#dog-title {
+  color: #485EBD;
+  text-shadow: 0px 0px 40px white;
+}
+.dog-text {
+  font-weight: lighter;
+  color: #485EBD;
+  text-shadow: 0px 0px 20px white;
+  letter-spacing: 1px;
 }
 #dogventures-description {
   margin-top: 30px;
@@ -53,21 +118,22 @@ h4 {
 .title {
   position: absolute;
   bottom: 80px;
+  right: 20px;
 }
-#nameBox {
+.name-box {
   font-family: 'Shadows Into Light', cursive;
   z-index: 1;
   /*transform: skewY(10deg);*/
   font-weight: bolder;
   /*color: #21961F;*/
-  text-shadow: 2px 2px 5px #FF3930, -2px -2px 10px #1269B2;
+  text-shadow: 2px 2px 5px #FF3930, -2px -2px 10px #25FAC1;
   background: -webkit-linear-gradient(#fff, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /*opacity: 0.8;*/
 }
 #about-title {
-
+  font-size: 5em;
   font-weight: bolder;
   /*color: #21961F;*/
   /*text-shadow: 5px 5px 0 #412659;*/
@@ -77,18 +143,25 @@ h4 {
   /*opacity: 0.8;*/
 }
 #about-description{
-    font-family: 'Exo', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 100;
+    color: #3A453F;
+    text-shadow: 1px 2px 3px #4599E8, -2px -2px 8px #E87B3B;
+}
+.card-white {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
 }
 .card {
-  font-family: 'Exo', sans-serif;
-  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #BDBDBD;
   /*width: 50%;
   padding: 10%;
   margin: 0 auto;*/
   color: black;
 }
 .cardBlack {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: black;
   color: white;
 }
@@ -114,13 +187,13 @@ h4 {
 
 #section0 {
   background-image: url(images/steps_wide.jpg);
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(255, 0, 0, 0.1);
   background-blend-mode: color-burn;
   padding: 10% 0 0 0;
 }
 #section2 {
   background-image: url(images/sunset.jpg);
-  background-color: rgba(255, 255, 255, 0.2);
+  /*background-color: rgba(255, 255, 255, 0.2);*/
   background-blend-mode: color-burn;
   padding: 6% 10% 0 10%;
   text-align: justify;
@@ -137,14 +210,18 @@ h4 {
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1{
-  background-color: #BD4A40;
+  background-color: #25FAC1;
   padding: 6% 0 0 0;
 }
 #slide2{
-  background-color: #485EBD;
+  background-color: #BD4A40;
   padding: 6% 0 0 0;
 }
 #slide3{
+  background-color: #485EBD;
+  padding: 6% 0 0 0;
+}
+#slide4{
   background-color: #24A622;
   padding: 6% 0 0 0;
 }
@@ -171,7 +248,7 @@ h4 {
 
 	#header{
 		top:0px;
-    font-size: 1.5em;
+    font-size: 3em;
     letter-spacing: 2px;
 	}
 	#footer{
