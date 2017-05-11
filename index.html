@@ -1,108 +1,229 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Gringo Labs</title>
-    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="public/css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/main.css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-    <!-- <script src="vendors/jquery.easings.min.js"></script> -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Gringo Labs</title>
 
-    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-    <!-- <script type="text/javascript" src="public/js/scrolloverflow.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo:700|Shadows+Into+Light|Gloria+Hallelujah|Roboto+Condensed|Reem+Kufi|Lato|Kalam" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="public/js/main.js"></script>
-  </head>
-  <body>
-  <!-- BOOTSTRAP NAVBAR BEGIN -->
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Gringo Labs</a>
-    </div>
+	<link rel="stylesheet" type="text/css" href="public/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="public/css/jquery.fancybox.css" />
 
-    <div class="collapse navbar-collapse" id="navbar-collapse-main">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#members">About</a></li>
-        <li><a href="#discography">Lab Work</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- BOOTSTRAP NAVBAR END -->
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="public/js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="public/js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src='public/js/main.js'></script>
+  	<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://use.fontawesome.com/c856c82c58.js"></script>
 
-<!-- FULLPAGE START -->
-    <div id="fullpage">
+</head>
+<body>
+	<a id="top"></a>
+  <div class="container-fluid">
+    <nav class="main-menu navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a id="logo" class="btn btn-lg" href="#top">Aaron Ballard</a>
+      </div>
 
-      <div class="section" id="first">
+      <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="btn btn-lg" href="#top">Home</a></li>
+          <li><a class="btn btn-lg" href="#about-section">About</a></li>
+          <li><a class="btn btn-lg" href="#project-icons">Projects</a></li>
+  	      <li><a class="btn btn-lg" href="public/assets/CV_English.pdf" id="cv">Resumé</a></li>
+        </ul>
+      </div>
+    </nav>
 
-        <div class="slide myimage" data-anchor="slide1">
+    <div class="row">
+			<!-- FULL PAGE START -->
+        <div id="quote-box" class="col-xs-12 text-center">
+          <p id="quote-text">“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”</p>
+        </div>
+				<!-- ABOUT SECTION -->
 
-          <img id="welcomeImage" data-src="public/css/images/steps_wide.jpg" class="img-responsive" alt="Responsive image"/>
-          <div class="layer">
-            <h2>Aaron Ballard</h2>
-            <h3>Full Stack Developer</h3>
+        <div id="about-section" class="col-xs-12 section about-description text-justify">
+					<div class="row">
+						<a name="projects"></a>
+						<div class="col-xs-10 col-xs-offset-1">
+							<hr>
+						</div>
+					</div>
+          <h2 class="text-center section-title">About me</h2>
+					<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0">
+						<img class="img-responsive img-circle" src="public/css/images/Me_and_Hugo.jpg" alt="Me and Hugo">
+					</div>
+          <div class="col-xs-12 col-sm-8">
+						<p id="about-description" >
+	            Full Stack Developer, Product Deliver Manager, US-Expat. <br> <br>I pride myself for critical thinking and <em>innovative</em> ideas, inspired by new technologies and addicted to learning. I'm extremely dedicated to accomplishing my goals, motivated by creating a relevant and <em>inspirational</em> product. <br><br>Living overseas in numerous countries over the past decade, I have developed a unique<em> multicultural</em> perspective and am bilingual in Spanish with knowledge of French, Mandarin Chinese, and German. My professional experience includes technology, video on demand, finance, photography, graphic design and application development </p>
           </div>
-
+					<!-- <div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
+							<hr>
+						</div>
+					</div> -->
+					<div class="col-xs-10 col-xs-offset-1">
+						<h3 id="skills" class="text-center">Languages & Frameworks</h3>
+						<ul class="skills list-inline text-center">
+							<li>MEAN Stack |</li>
+							<li>Node |</li>
+							<li>Angular |</li>
+							<li>Express |</li>
+							<li>Ruby on Rails |</li>
+							<li>jQuery |</li>
+							<li>Python |</li>
+							<li>MongoDB |</li>
+							<li>PostgreSQL |</li>
+							<li>Mongoose |</li>
+							<li>Git |</li>
+							<li>Heroku |</li>
+							<li>AWS |</li>
+							<li>Docker</li>
+							
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
+							<hr>
+						</div>
+					</div>
         </div>
 
-        <div class="slide myimage" data-anchor="slide2">
-          <img data-src="public/css/images/ship_sunset.jpg" class="img-responsive" alt="Responsive image"/>
-        </div>
-        <div class="slide myimage" data-anchor="slide3">
-          <img data-src="public/css/images/warching_sunset.jpg" class="img-responsive" alt="Responsive image"/>
-        </div>
-        <div class="slide myimage" data-anchor="slide4"><img data-src="public/css/images/flag.jpg" class="img-responsive" alt="Responsive image"/></div>
-      </div>
+			<!-- PROJECT SECTION -->
+			<div id="project-section" class="col-xs-12 section">
+				<h2 class="text-center section-title">Projects</h2>
+				<div id="project-icons" class="col-xs-12">
+					<div id="c2go-icon" class="text-center icon">
+						<i class="fa fa-coffee fa-4x" aria-hidden="true"></i>
+						<h5 id="c2go-label" class="icon-label">Coffee-2-Go</h5>
+					</div>
+					<div id="nitpic-icon" class="text-center icon">
+						<i class="fa fa-camera-retro fa-4x" aria-hidden="true"></i>
+						<h5 id="nitpic-label" class="icon-label">NITPIC</h5>
+					</div>
+					<div id="store-icon" class="text-center icon">
+						<i class="fa fa-shopping-bag fa-4x" aria-hidden="true"></i>
+						<h5 id="store-label" class="icon-label">The Store Front</h5>
+					</div>
+					<div id="dog-icon" class="text-center icon">
+						<i class="fa fa-paw fa-4x" aria-hidden="true"></i>
+						<h5 id="dog-label" class="icon-label">DogVentures</h5>
+					</div>
+				</div>
 
-      <div class="section" id="second">
-        <div class="containter">
-          <div class="row">
-            <div class="col-sm-5 col-sm-offset-2">
-              <img src="public/css/images/steps_narrow.jpg" class="img-responsive" alt="Responsive image">
-            </div>
-            <div class="col-sm-4">
-              <p class="">After studying Economics at UCLA, I spent several years living and travelling around the world, absorbing foreign cultures and languages. Eventually I found myself working in finance but something was missing. I rediscoverd my love for programming and dove into the General Assembly Web Development Immersive Bootcamp and never looked back!</p>
-              <br>
-              <p class="">A passionate web developer and citizen of the world. I bring unconventional, innovative thinking and a global perspective to the team. I am a knowledge seeker, a free thinker, looking to work on something meaningful and driven by the idea of creating something fantastic.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+				<div class="col-xs-12">
+					<div id="c2go-div" class="project-div text-center ">
+						<div class="row">
+							<a href="https://coffee-2-go.herokuapp.com/" target="_blank"><div class="col-sm-4 col-sm-offset-4 text-center project-title">Coffee-2-Go</div></a>
+						</div>
 
-      <div class="section" id="third">
-        <div class="containter">
+						<p class="project-description">
+							This was my final independent project for the General Assembly course. The idea behind Coffee-2-Go is to avoid the dreaded rush-hour line at the coffee shop. You can search for coffee shops using google maps, pick one and order your coffee online, and go pick it up.
+						<br>
+						<br>
+							The Back End is <em class="">Ruby on Rails</em> with PostgreSQL for the database which has a <em class="">complex structure</em> using 6 different models.  The Front End is <em class="">Angular.js</em> incorporating the <em class="">Google Places API</em> along with Flexbox for CSS styling. <em class="">User authentication</em> is done with JWT tokens.
+						</p>
+						<div class="project-images">
+							<img class="project-image col-sm-3 padding img-responsive img-rounded" src="public/css/images/c2go.jpg" alt="">
+							<img class="project-image col-sm-3 padding img-responsive img-rounded" src="public/css/images/c2go_menu.jpg" alt="">
+							<img class="project-image col-sm-3 padding img-responsive img-rounded" src="public/css/images/c2go_ERD.png" alt="">
+							<img class="project-image col-sm-3 padding img-responsive img-rounded" src="public/css/images/c2go_map.jpg" alt="">
+						</div>
+					</div>
+					<div id="nitpic-div" class="project-div text-center ">
+						<div class="row">
+							<a href="https://nitpic-app-ui.herokuapp.com/" target="_blank"><div class="col-sm-4 col-sm-offset-4 text-center project-title">N I T P I C</div></a>
+						</div>
+						<p class="project-description">
+							NITPIC is a social media / photo sharing app. Create photo albums, upload and leave comments on photos.
+							<br>
+							<br>
+							This was a <em class="">collaborative</em> project for the General Assembly course. My role was to build out the <em class="">Angular.js Front End</em> and the <em class="">Back End Rails API</em>. My team mates were responsible for styling the app and incorporating <em>Paperclip</em> for photo upload.
+						</p>
+						<div class="project-images">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/NITPIC.png" alt="">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/nitpic.jpg" alt="">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/nitpic_upload.jpg" alt="">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/nitpic_comments.jpg" alt="">
+						</div>
+					</div>
+					<div id="store-div" class="project-div text-center ">
+						<div class="row">
+							<a href="https://the-store-front.herokuapp.com/" target="_blank"><div class="col-sm-4 col-sm-offset-4 text-center project-title">The Store Front</div></a>
+						</div>
+						<p class="project-description">
+							The Store Front is exactly that - a store front app. Browse products by category or use the search feature for something specific. Add products to the cart and checkout when you're ready.
+							<br>
+							<br>
+							This was a <em>collaborative</em> project for the General Assembly course. My role was to build the <em>Angular.js Front End</em> and the Back End using <em>Node, Express, and MongoDB with Mongoose</em>. My team mates were responsible for styling the app and database support.
+						</p>
+						<div class="project-images">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/store_tv.jpg" alt="">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/store_login.jpg" alt="">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/store_orders.jpg" alt="">
+							<img class="project-image col-sm-3 padding center-block img-responsive img-rounded" src="public/css/images/store_cart.jpg" alt="">
+						</div>
+					</div>
+					<div id="dog-div" class="project-div text-center ">
+						<div class="row">
+							<a href="https://dog-ventures.herokuapp.com/" target="_blank"><div class="col-sm-4 col-sm-offset-4 text-center project-title">DogVentures</div></a>
+						</div>
+						<p class="project-description">
+							A social media app for dog-lovers to share information about dog-friendly travel locations. Users can write reviews for specific locations. Reviews include a comment section for anyone to join in the conversation.
+							<br>
+							<br>
+							This was an <em>independent</em> project for the General Assembly course created with <span>Node.js, Express.js, Handlebars</span> for the view engine and <span>MongoDB</span> for the database. I used <span>Bootstrap 3</span> for CSS styling and <span>Passport.js</em> for User Authentication.
+						</p>
+						<div class="project-images">
+							<img class="project-image col-sm-4 padding center-block img-responsive img-rounded" src="public/css/images/dog_welcome.jpg" alt="">
+							<img class="project-image col-sm-4 padding center-block img-responsive img-rounded" src="public/css/images/Dogventures.jpg" alt="">
+							<img class="project-image col-sm-4 padding center-block img-responsive img-rounded" src="public/css/images/dog_post.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- FULL PAGE END -->
+	  </div>
+    <div class="row">
+	  </div>
 
+    <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse" id="footer">
+      <div id="social-links" class="">
+				<div class="">
+					<a href="https://www.linkedin.com/in/aaron-ballard" target="_blank"><img id="linkedIn" src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+				</div>
 
+      <!-- FACEBOOK -->
+				<div class="">
+					<a target="_blank" title="follow me on facebook" href="https://www.facebook.com/mraballard"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+				</div>
 
+      <!-- TWITTER -->
+				<div class="">
+					<a target="_blank" title="follow me on Twitter" href="https://twitter.com/mraballard"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+				</div>
 
-        </div>
-      </div>
-
-      <div class="section" id="fourth">
-        <div class="containter">
-
-
-
-
-        </div>
-      </div>
-
+      <!-- GITHUB -->
+				<div class="">
+					<a target="_blank" title="follow me on Github" href="https://github.com/mraballard"><img src="http://i67.tinypic.com/2mmecyg.jpg" alt="follow me on Github" border=0></a>
+				</div>
     </div>
+  </nav>
 
-
-
-  </body>
+  </div> <!-- Close Container -->
+</body>
 </html>
