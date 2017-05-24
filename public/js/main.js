@@ -116,8 +116,8 @@ $(document).ready(function() {
     fitToView : true,
     autoSize  : true,
     closeClick  : true,
-    openEffect  : 'none',
-    closeEffect : 'none'
+    openEffect  : 'fade',
+    closeEffect : 'fade'
   });
 
 });
