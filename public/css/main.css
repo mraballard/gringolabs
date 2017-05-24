@@ -55,15 +55,17 @@
   box-shadow: 0 0 3px black;
   border-radius: 3px;
   font-size: 1.5em;
-  margin-bottom: 20px;
+  width: 200px;
+  margin: 0px auto 20px auto;
   padding: 10px 0px 10px 0px;
-  color: #42AEB2;
-  background-color: rgba(190, 190, 190, 0.6);
+  color: white;
+  letter-spacing: 2px;
+  background-color: rgba(66, 174, 178, 0.9);
   cursor: pointer;
 }
 .project-title:hover {
   box-shadow: 0 0 12px black;
-  background-color: rgba(80, 80, 80, 0.8);
+  background-color: rgba(66, 174, 178, 0.7);
 }
 .project-title:click {
   box-shadow: 0 0 12px black;
@@ -80,6 +82,12 @@
   font-family: 'Kalam', cursive;
   color: #42AEB2;
   font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 em {
   color: #42AEB2;
@@ -110,12 +118,18 @@ hr {
   color: black;
 }
 .project-div {
+  margin-top: 20px;
   display: none;
   text-align: center;
 }
 .icon {
+  width: 150px;
+  height: 150px;
   cursor: pointer;
-  padding-bottom: 20px;
+  padding: 20px;
+}
+.icon:hover {
+  box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 .icon-label {
   letter-spacing: 2px;
